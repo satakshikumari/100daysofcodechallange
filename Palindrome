@@ -1,0 +1,14 @@
+class Solution {
+    public boolean isPalindrome(int num)
+    {
+   if(num < 0)
+       return  false; 
+   int rev = 0, rema, original = num;
+   while(num != 0) {
+        rema = num % 10;
+        rev = rev * 10 + rema; 
+        num  /= 10; 
+    }
+    return original == rev;
+}
+}
