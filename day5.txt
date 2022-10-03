@@ -1,0 +1,135 @@
+HackerRank String Questions
+
+1. Input Format
+
+The first line contains a string . The second line contains another string . The strings are comprised of only lowercase English letters.
+
+Output Format
+
+There are three lines of output:
+For the first line, sum the lengths of A and  B.
+For the second line, write Yes if  is lexicographically greater than  otherwise print No instead.
+For the third line, capitalize the first letter in both strings and print them on a single line, separated by a space.
+
+Code- 
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        int C= A.length() + B.length();
+        System.out.println(C);
+         System.out.println(A.compareTo(B) > 0 ? "Yes" : "No");
+        String output = A.substring(0, 1).toUpperCase() + A.substring(1);
+        String output2 = B.substring(0, 1).toUpperCase() + B.substring(1);
+        
+        System.out.println(output + " "  +output2)  ;        
+    }
+}
+
+
+2. Input Format
+
+The first line contains a single string denoting s .
+The second line contains two space-separated integers denoting the respective values of start and end .
+
+
+Output Format
+
+Print the substring in the inclusive range from start to end .
+
+Code-
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String S = in.next();
+        int start = in.nextInt();
+        int end = in.nextInt();
+        System.out.println(S.substring(start,end));
+        
+    }
+    
+}
+
+3. Given a string, s, and an integer k , complete the function so that it finds the lexicographically smallest and largest substrings of length k .
+
+Code-
+import java.util.Scanner;
+
+public class Solution {
+
+    public static String getSmallestAndLargest(String s, int k) {
+        String str = s.substring(0,k);
+        String smallest = str;
+        String largest = str;
+        for(int i=1;i<=s.length()-k;i++)
+        {
+            str=s.substring(i,i+k);
+            
+            if (str.compareTo(smallest)<0)
+            {
+            smallest=str;
+             }
+             if
+                (str.compareTo(largest)>0) 
+                {
+                    largest=str;
+                } 
+             }
+        
+        
+        
+        return smallest + "\n" + largest;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        int k = scan.nextInt();
+        scan.close();
+      
+        System.out.println(getSmallestAndLargest(s, k));
+    }
+}
+
+
+4. Given a string , print Yes if it is a palindrome, print No otherwise.
+
+Code-
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String R= new StringBuilder(A).reverse().toString();
+        if (A.equals(R))
+        {
+            System.out.println("Yes");
+        }
+        else
+            System.out.println("No");
+        
+        
+    }
+}
+
+
+
