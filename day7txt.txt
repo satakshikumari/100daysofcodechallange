@@ -1,0 +1,113 @@
+Pattern Questions
+
+1. 
+
+*             * 
+* *         * * 
+* * *     * * *
+* * * * * * * * 
+* * * * * * * * 
+* * *     * * * 
+* *         * * 
+*             * 
+
+Code-
+
+import java.util.*;
+ 
+public class Solutions {
+   public static void main(String args[]) {
+       int n = 4;
+ 
+   
+       for(int i=1; i<=n; i++) {
+           for(int j=1; j<=i; j++) {
+               System.out.print("*");
+           }
+ 
+           int spaces = 2 * (n-i);
+           for(int j=1; j<=spaces; j++) {
+               System.out.print(" ");
+           }
+ 
+           for(int j=1; j<=i; j++) {
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+ 
+
+       for(int i=n; i>=1; i--) {
+           for(int j=1; j<=i; j++) {
+               System.out.print("*");
+           }
+ 
+           int spaces = 2 * (n-i);
+           for(int j=1; j<=spaces; j++) {
+               System.out.print(" ");
+           }
+ 
+           for(int j=1; j<=i; j++) {
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+   }   
+}
+
+  //EXPLAINATION- 
+Printing this pattern in two part. Forst one is upper part and then lower part.
+Upper part- Using i loop printing the stars in 6 rows and using j loop printing the stars in columns.
+             using the patttern...
+              1 star     6 spaces     1 star
+              2 star     4 spaces     2 star
+              3 star     2 spaces     3 star
+              4 star     0 spaces     4 star
+
+Space= 2*(n-i)
+
+Lower part- In the lower part we are using the same logic as we have used in upper part, but we are printing the rows differently. This time i will start from n and decrement till i is greater than and equal to 1.
+           
+              
+
+2.           *  *  *  *  *
+          *  *  *  *  *
+       *  *  *  *  *
+    *  *  *  *  *
+ *  *  *  *  *
+
+
+Code- 
+
+import java.util.*;
+ 
+public class Solutions {
+   public static void main(String args[]) {
+       int n = 5;
+ 
+       for(int i=1; i<=n; i++) {
+           for(int j=1; j<=n-i; j++) {
+               System.out.print(" ");
+           }
+ 
+           
+           for(int j=1; j<=n; j++) {
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+   }   
+}
+
+
+
+EXPLAINATION-
+We are printing this using two part. One part is for space and other one is for star.
+                 4 spaces     5 star
+                 3 spaces     5 star
+                 2 spaces     5 star
+                 1 spaces     5 star
+		     0 spaces     5 star
+
+Space= n-i
+     
