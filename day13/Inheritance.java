@@ -91,6 +91,6 @@ public class Solution{
 
 /*Output
 My superclass is: Arithmetic
-42 13 20
+42 13 20*/
 
 
