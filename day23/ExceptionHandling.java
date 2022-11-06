@@ -1,4 +1,4 @@
-/* Exception Hnadelling (Try- Ctach) | HackerRank
+/* Exception Hnadling (Try- Ctach) | HackerRank
 
 Exception handling is the process of responding to the occurrence, during computation, of exceptions – anomalous or exceptional conditions requiring special processing – often changing the normal flow of program execution. 
 Java has built-in mechanism to handle exceptions. Using the try statement we can test a block of code for errors.
