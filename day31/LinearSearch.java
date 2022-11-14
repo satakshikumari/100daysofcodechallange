@@ -101,4 +101,4 @@ So the worst-case time complexity of the linear search is o(1).In the worst case
 The worst-case time complexity of the linear search is o(n)
 
 SPACE COMPLEXITY: 
-The SPACE complexity of the linear search is o(1)
+The SPACE complexity of the linear search is o(1)  */
