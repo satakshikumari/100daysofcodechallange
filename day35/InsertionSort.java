@@ -3,10 +3,9 @@ INSERTION SORT
 
 Code */
 
-mport java.util.Scanner;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        long start = System.nanoTime();
         Scanner s=new Scanner(System.in);
         System.out.println("Enter number of value in array -");
         int n = s.nextInt();
