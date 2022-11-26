@@ -221,3 +221,82 @@ public class SinglyLinkedList {
     }
 
     
+
+/* Output
+
+1.Insertion at begining
+2.Insertion at end
+3.Insertion after given position
+4.Deletion from begining
+5.Deletion from end
+6.Deletion from given position
+7.Display
+8.Exit
+1
+Enter the element to be inserted-
+1
+1.Insertion at begining
+2.Insertion at end
+3.Insertion after given position
+4.Deletion from begining
+5.Deletion from end
+6.Deletion from given position
+7.Display
+8.Exit
+1
+Enter the element to be inserted-
+2
+1.Insertion at begining
+2.Insertion at end
+3.Insertion after given position
+4.Deletion from begining
+5.Deletion from end
+6.Deletion from given position
+7.Display
+8.Exit
+1
+Enter the element to be inserted-
+3
+1.Insertion at begining
+2.Insertion at end
+3.Insertion after given position
+4.Deletion from begining
+5.Deletion from end
+6.Deletion from given position
+7.Display
+8.Exit
+3
+Enter the element to be inserted and after postion-
+2
+3
+1.Insertion at begining
+2.Insertion at end
+3.Insertion after given position
+4.Deletion from begining
+5.Deletion from end
+6.Deletion from given position
+7.Display
+8.Exit
+7
+Elements in list
+3-->2-->1-->2-->NULL1.Insertion at begining
+2.Insertion at end
+3.Insertion after given position
+4.Deletion from begining
+5.Deletion from end
+6.Deletion from given position
+7.Display
+8.Exit
+6
+Enter postion from where element is to be deleted-
+5
+Cannot Delete...
+1.Insertion at begining
+2.Insertion at end
+3.Insertion after given position
+4.Deletion from begining
+5.Deletion from end
+6.Deletion from given position
+7.Display
+8.Exit
+
