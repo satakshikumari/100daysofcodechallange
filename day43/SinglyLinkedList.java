@@ -61,11 +61,13 @@ public class SinglyLinkedList {
            while(i<loc){
                ptr1=ptr1.next;
                i++;
-           }    
+              
            if(ptr1==null){
                System.out.println("Cannot Insert...");
+               return;
         }
-           else if(ptr1.next == null){
+    }
+            if(ptr1.next == null){
                ptr1.next=ptr;
            }
            
@@ -75,6 +77,7 @@ public class SinglyLinkedList {
            }
        }    
         }
+    
     
         // Delete from first pos
 
@@ -122,17 +125,16 @@ public class SinglyLinkedList {
                 while(i<pos){
                     ptr1=ptr;
                     ptr=ptr.next;
-                    i++;
-                }
+                
+                
                 if(ptr==null){
                     System.out.println("Cannot Delete...");
+                    return;
                 }
+                i++;
+            }
     
-                else if(ptr.next == null){
-                    ptr1.next=null;
-                    ptr=null;
-                }
-                else if(ptr==head){
+                if(ptr==head){
                     head=head.next;
                     ptr=null;
                 }
@@ -143,6 +145,7 @@ public class SinglyLinkedList {
                 
             }    
         }
+
   
   // Display elements
 
