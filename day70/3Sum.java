@@ -29,3 +29,41 @@ Example 3:
 Input: nums = [0,0,0]
 Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
+
+
+Code */
+
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> a = new ArrayList<>();
+        Arrays.sort(nums);
+        for(int i=0; i<nums.length-2;i++){
+            if(i>0&&nums[i]==nums[i-1])
+            continue;
+            int  lo= i+1;
+            int hi= nums.length-1;
+            while(lo<hi){
+                if(nums[lo]+nums[hi]== -nums[i])
+                {
+                    a.add(Arrays.asList(nums[i],nums[lo],nums[hi]));
+                    lo++;
+                    hi--;
+                    while(lo<hi && nums[lo]==nums[lo-1])
+                    lo++;
+                    while(lo<hi && nums[hi]==nums[hi+1])
+                    hi--;
+
+                }
+                else if(nums[lo]nums[hi]> -nums[i]){
+                    hi--;
+
+                }
+                else{
+                    lo++;
+                }
+            }
+        }
+        return a;
+        
+    }
+}
