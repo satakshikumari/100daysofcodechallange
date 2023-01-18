@@ -1,5 +1,5 @@
 /*
-Maximum subarray - Leetcode
+Maximum subarray - Leetcode (Kadane's Algo)
 
 Given an integer array nums, find the 
 subarray
